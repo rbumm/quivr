@@ -53,4 +53,5 @@ export const paidModels = [...openAiPaidModels] as const;
 
 export type PaidModels = (typeof paidModels)[number];
 
-export type Model = (typeof freeModels)[number];
+//export type Model = (typeof freeModels)[number];
+export type Model = (typeof freeModels)[number] | (typeof paidModels)[number];
